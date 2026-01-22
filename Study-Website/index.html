@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Programming Site</title>
+  <meta name="description" content="Programming resources, blog, projects, and more." />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#2563eb',
+              dark: '#1e40af'
+            }
+          }
+        }
+      },
+      darkMode: 'media'
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href =simplesignup.html rel="alternate" title="Simple Sign Up Form" type="text/html">
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .container { max-width: 1100px; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-slate-50 to-white text-slate-800">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="text-xl font-bold text-brand">MySite.dev</a>
+      <nav class="hidden md:flex gap-2 text-sm">
+        <!-- nav link hover underline and bg -->
+        <a href="#about" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">About</a>
+        <a href="#resources" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">Resources</a>
+        <a href="#channels" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">YouTube</a>
+        <a href="#blog" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">Blog</a>
+        <a href="#projects" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">Projects</a>
+        <a href="#testimonials" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">Testimonials</a>
+        <a href="#contact" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">Contact</a>
+        <a href="#newsletter" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">Newsletter</a>
+        <a href="#faq" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">FAQ</a>
+      </nav>
+      <button id="mobileMenuBtn" class="md:hidden inline-flex items-center px-3 py-2 border rounded text-slate-600 border-slate-300">Menu</button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 bg-white">
+      <div class="px-4 py-2 grid gap-2 text-sm">
+        <a href="#about" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">About</a>
+        <a href="#resources" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">Resources</a>
+        <a href="#channels" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">YouTube</a>
+        <a href="#blog" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">Blog</a>
+        <a href="#projects" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">Projects</a>
+        <a href="#testimonials" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">Testimonials</a>
+        <a href="#contact" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">Contact</a>
+        <a href="#newsletter" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">Newsletter</a>
+        <a href="#faq" class="px-2 py-1 rounded hover:text-brand hover:bg-slate-100 transition-colors">FAQ</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="container mx-auto px-4 py-16 bg-gradient-to-r from-white to-slate-50 rounded-xl">
+    <div class="grid md:grid-cols-2 items-center gap-10">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Hi, I’m <span class="text-brand">Rajeswari Pokala</span> — developer, writer, and lifelong learner.</h1>
+        <p class="mt-4 text-slate-600">Welcome to my hub for programming resources, blog posts, and projects. Explore, learn, and say hi!</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#resources" class="px-4 py-2 bg-brand text-white rounded hover:bg-brand-dark">Programming Resources</a>
+          <a href="#projects" class="px-4 py-2 border border-slate-300 rounded hover:border-brand hover:text-brand">View Projects</a>
+        </div>
+      </div>
+      <!-- <div class="aspect-[4/3] bg-slate-100 rounded-lg flex items-center justify-center text-slate-400">Add a hero image here</div> -->
+
+      
+      <div class="aspect-[4/3] bg-slate-100 rounded-lg flex items-center justify-center text-slate-400"><img src="/assets/imageraji.jpg" alt="My Profile Image" width="90%" height="auto"></div>
+
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-slate-50/70 border-y border-slate-200">
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl font-bold inline-block transition transform hover:scale-105 hover:text-brand hover:underline underline-offset-4 decoration-brand/60">About Me</h2>
+      <p class="mt-4 text-slate-700">I’m a software developer with experience in web development, teaching, and building tools that help others learn faster. I enjoy JavaScript, Python, and exploring developer experience.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+          <h3 class="font-semibold">Experience</h3>
+          <p class="text-sm text-slate-600">Company A (Front-end), Company B (Full-stack), Open-source contributor.</p>
+        </div>
+        <div class="p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+          <h3 class="font-semibold">Interests</h3>
+          <p class="text-sm text-slate-600">UI engineering, performance, documentation, teaching, automation.</p>
+        </div>
+        <div class="p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+          <h3 class="font-semibold">Achievements</h3>
+          <p class="text-sm text-slate-600">Talks, tutorials, community work, notable projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programming Resources (PDFs) -->
+  <section id="resources" class="container mx-auto px-4 py-14 bg-slate-50/70 rounded-xl">
+    <div class="flex items-end justify-between gap-4">
+      <div>
+        <h2 class="text-3xl font-bold inline-block transition transform hover:scale-105 hover:text-brand hover:underline underline-offset-4 decoration-brand/60">Programming Resources</h2>
+        <p class="text-slate-600">Downloadable PDFs with quick references and guides. Use filters to narrow down.</p>
+      </div>
+      <div class="flex gap-2">
+        <input id="pdfSearch" type="text" placeholder="Search..." class="border rounded px-3 py-2 text-sm" />
+        <select id="pdfTagFilter" class="border rounded px-3 py-2 text-sm">
+          <option value="">All tags</option>
+        </select>
+      </div>
+    </div>
+    <div id="pdfGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </section>
+
+  <!-- Popular YouTube Channels -->
+  <section id="channels" class="bg-slate-50/80 border-y border-slate-200">
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl font-bold inline-block transition transform hover:scale-105 hover:text-brand hover:underline underline-offset-4 decoration-brand/60">Popular YouTube Channels</h2>
+      <p class="text-slate-600">Curated channels by topic, with quick descriptions.</p>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="channelGrid"></div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="container mx-auto px-4 py-14">
+    <div class="flex items-end justify-between">
+      <h2 class="text-3xl font-bold inline-block transition transform hover:scale-105 hover:text-brand hover:underline underline-offset-4 decoration-brand/60">Blog</h2>
+      <a href="/blog/index.html" class="text-brand hover:underline">View all posts →</a>
+    </div>
+    <div id="blogList" class="mt-6 grid md:grid-cols-3 gap-6"></div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-slate-50/70 border-y border-slate-200">
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl font-bold inline-block transition transform hover:scale-105 hover:text-brand hover:underline underline-offset-4 decoration-brand/60">Portfolio / Projects</h2>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="group border rounded-lg overflow-hidden bg-white transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
+          <div class="h-40 bg-slate-100"></div>
+          <div class="p-4">
+            <h3 class="font-semibold group-hover:text-brand transition-colors">Project One</h3>
+            <p class="text-sm text-slate-600">Brief description and outcomes.</p>
+            <div class="mt-3 flex gap-3 text-sm">
+              <a href="#" class="text-brand hover:underline">Live</a>
+              <a href="#" class="text-brand hover:underline">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="group border rounded-lg overflow-hidden bg-white transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
+          <div class="h-40 bg-slate-100"></div>
+          <div class="p-4">
+            <h3 class="font-semibold group-hover:text-brand transition-colors">Project Two</h3>
+            <p class="text-sm text-slate-600">Brief description and outcomes.</p>
+            <div class="mt-3 flex gap-3 text-sm">
+              <a href="#" class="text-brand hover:underline">Live</a>
+              <a href="#" class="text-brand hover:underline">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="container mx-auto px-4 py-14 bg-slate-50/60 rounded-xl">
+    <h2 class="text-3xl font-bold inline-block transition transform hover:scale-105 hover:text-brand hover:underline underline-offset-4 decoration-brand/60">Testimonials</h2>
+    <div class="mt-6 grid md:grid-cols-3 gap-6">
+      <blockquote class="p-4 border rounded-lg bg-white hover:bg-slate-50 transition-colors">
+        <p class="italic">“Great collaborator and problem-solver.”</p>
+        <footer class="mt-2 text-sm text-slate-600">— Colleague</footer>
+      </blockquote>
+      <blockquote class="p-4 border rounded-lg bg-white hover:bg-slate-50 transition-colors">
+        <p class="italic">“Clear teacher with practical wisdom.”</p>
+        <footer class="mt-2 text-sm text-slate-600">— Mentee</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-slate-50/70 border-y border-slate-200">
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl font-bold inline-block transition transform hover:scale-105 hover:text-brand hover:underline underline-offset-4 decoration-brand/60">Contact</h2>
+      <p class="text-slate-600">Use the form below or email me directly.</p>
+      <form class="mt-6 grid gap-4 max-w-xl bg-white/60 p-4 rounded-lg" onsubmit="window.location.href = `mailto:you@example.com?subject=${encodeURIComponent(this.name.value)}&body=${encodeURIComponent(this.message.value)}`; return false;">
+        <input name="name" required class="border rounded px-3 py-2" placeholder="Your name" />
+        <input name="email" type="email" required class="border rounded px-3 py-2" placeholder="Email (optional if using mailto)" />
+        <textarea name="message" required rows="5" class="border rounded px-3 py-2" placeholder="Your message"></textarea>
+        <button class="px-4 py-2 bg-brand text-white rounded hover:bg-brand-dark w-fit">Send</button>
+      </form>
+      <div class="mt-4 flex gap-4 text-sm text-slate-600">
+        <a href="#" class="hover:text-brand">GitHub</a>
+        <a href="#" class="hover:text-brand">LinkedIn</a>
+        <a href="#" class="hover:text-brand">Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter" class="container mx-auto px-4 py-14">
+    <h2 class="text-3xl font-bold inline-block transition transform hover:scale-105 hover:text-brand hover:underline underline-offset-4 decoration-brand/60">Newsletter Signup</h2>
+    <p class="text-slate-600">Subscribe for updates on new resources and posts.</p>
+    <form action="https://buttondown.email/api/emails/embed-subscribe/YOUR_BUTTONDOWN_USERNAME" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/YOUR_BUTTONDOWN_USERNAME', 'popupwindow')" class="mt-6 flex gap-2 max-w-xl">
+      <input type="email" name="email" placeholder="Enter your email" class="border rounded px-3 py-2 flex-1" required>
+      <input type="hidden" value="1" name="embed" />
+      <button type="submit" class="px-4 py-2 bg-brand text-white rounded hover:bg-brand-dark">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-slate-50/70 border-y border-slate-200">
+    <div class="container mx-auto px-4 py-14">
+      <h2 class="text-3xl font-bold inline-block transition transform hover:scale-105 hover:text-brand hover:underline underline-offset-4 decoration-brand/60">FAQ</h2>
+      <div class="mt-6 grid gap-4">
+        <details class="border rounded p-4 bg-white">
+          <summary class="font-semibold cursor-pointer">What topics do you cover?</summary>
+          <p class="mt-2 text-slate-600">JavaScript, Python, web dev, tools, and learning techniques.</p>
+        </details>
+        <details class="border rounded p-4 bg-white">
+          <summary class="font-semibold cursor-pointer">Can I suggest resources?</summary>
+          <p class="mt-2 text-slate-600">Yes—contact me with your suggestions!</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Legal -->
+  <footer class="container mx-auto px-4 py-10">
+    <div class="flex flex-col md:flex-row gap-4 md:items-center justify-between text-sm text-slate-600">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="/legal/privacy.html" class="hover:text-brand">Privacy Policy</a>
+        <a href="/legal/disclaimer.html" class="hover:text-brand">Disclaimer</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

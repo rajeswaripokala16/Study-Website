@@ -1,0 +1,20 @@
+[
+  {
+    "title": "JavaScript Essentials Cheat Sheet",
+    "summary": "A compact reference for JS syntax, array/object methods, and tips.",
+    "tags": ["javascript", "web"],
+    "url": "/pdfs/js-essentials.pdf"
+  },
+  {
+    "title": "Python Quick Guide",
+    "summary": "Core syntax, data structures, and standard library highlights.",
+    "tags": ["python"],
+    "url": "/pdfs/python-quick-guide.pdf"
+  },
+  {
+    "title": "Git & GitHub Basics",
+    "summary": "Everyday commands, branching, and collaboration workflows.",
+    "tags": ["git", "tools"],
+    "url": "/pdfs/git-basics.pdf"
+  }
+]

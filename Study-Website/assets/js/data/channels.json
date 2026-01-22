@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Fireship",
+    "url": "https://www.youtube.com/@Fireship",
+    "logo": "",
+    "topics": ["web dev", "javascript", "cloud"],
+    "description": "High-energy explainers on dev topics and frameworks."
+  },
+  {
+    "name": "Corey Schafer",
+    "url": "https://www.youtube.com/@coreyms",
+    "logo": "",
+    "topics": ["python", "flask", "django"],
+    "description": "In-depth Python tutorials and best practices."
+  },
+  {
+    "name": "The Net Ninja",
+    "url": "https://www.youtube.com/@NetNinja",
+    "logo": "",
+    "topics": ["javascript", "react", "node"],
+    "description": "Comprehensive playlists on modern web development."
+  }
+]
